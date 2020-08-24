@@ -3,7 +3,7 @@ package pl.filipmikolajzeglen.app;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import pl.filipmikolajzeglen.beans.MessagePrinter;
+import pl.filipmikolajzeglen.beans.printers.MessagePrinter;
 
 @Configuration
 @ComponentScan(basePackages = "pl.filipmikolajzeglen.beans")

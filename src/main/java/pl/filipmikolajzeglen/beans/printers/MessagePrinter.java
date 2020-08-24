@@ -1,7 +1,9 @@
-package pl.filipmikolajzeglen.beans;
+package pl.filipmikolajzeglen.beans.printers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import pl.filipmikolajzeglen.beans.decorators.MessageDecorator;
+import pl.filipmikolajzeglen.beans.producers.MessageProducer;
 
 @Component
 public class MessagePrinter {
