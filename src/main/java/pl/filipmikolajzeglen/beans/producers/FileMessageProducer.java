@@ -10,7 +10,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 @Component
-@FileMessage
+@Producer(type = Producer.ProducerType.FILE)
 public class FileMessageProducer implements MessageProducer {
 
     @Override

@@ -3,7 +3,6 @@ package pl.filipmikolajzeglen.beans.printers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.filipmikolajzeglen.beans.decorators.MessageDecorator;
-import pl.filipmikolajzeglen.beans.producers.FileMessage;
 import pl.filipmikolajzeglen.beans.producers.MessageProducer;
 
 @Component
@@ -13,7 +12,7 @@ public class MessagePrinter {
     private MessageDecorator decorator;
 
     @Autowired
-    public MessagePrinter(@FileMessage MessageProducer producer) {
+    public MessagePrinter(MessageProducer producer) {
         this.producer = producer;
     }
 

@@ -13,4 +13,11 @@ import org.springframework.beans.factory.annotation.Qualifier;
         ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 @Qualifier
-public @interface FileMessage {}
+public @interface Producer {
+
+    ProducerType type();
+
+    public enum ProducerType {
+        SIMPLE, FILE;
+    }
+}
