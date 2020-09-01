@@ -8,6 +8,8 @@ import pl.filipmikolajzeglen.beans.producers.MessageProducer;
 @Component
 public class MessagePrinter {
 
+    @Autowired
+    @Message(type = Message.MessageType.FILE)
     private MessageProducer producer;
     private MessageDecorator decorator;
 
