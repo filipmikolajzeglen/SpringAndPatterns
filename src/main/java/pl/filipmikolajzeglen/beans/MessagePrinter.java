@@ -9,7 +9,8 @@ public class MessagePrinter {
     @Autowired
     private MessageProducer producer;
 
-    MessagePrinter() {}
+    MessagePrinter() {
+    }
 
     public MessagePrinter(MessageProducer producer) {
         this.producer = producer;
